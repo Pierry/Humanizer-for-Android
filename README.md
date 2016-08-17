@@ -2,17 +2,25 @@ Humanizer-for-Android
 =====
 
     ThisIsAnExample => This is an example
-    
-    THISISANEXAMPLE => This is an example
-    
-    thisisanexample => This is an example
+    THIS IS AN EXAMPLE => This is an example
     
     
 Usage
 =====
 
-    String result = Humanizer.forMe(stringValue);
+### First char to uppercase:
+
+- Before => this is an Example
+- After  => This is an example
+
+    String result = Humanizer.FirstChar(stringValue);
     
+### Names:
+
+- Before => this is an example
+- After  => This Is An Example
+  
+    String result = Humanizer.Name(stringValue);
     
 Gradle
 =====
