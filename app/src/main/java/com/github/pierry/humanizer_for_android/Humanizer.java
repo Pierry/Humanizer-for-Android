@@ -11,24 +11,23 @@ public class Humanizer {
 
   public static String Name(String value) {
     String[] values = value.split("(?<=.)(?=\\p{Lu})");
-    StringBuilder strBuilder = new StringBuilder();
+    StringBuilder result = new StringBuilder();
     for (int i = 0; i < values.length; i++) {
-      strBuilder.append(values[i].substring(0, 1).toUpperCase());
-      strBuilder.append(values[i].substring(1).toLowerCase());
-      strBuilder.append(SPACE);
+      result.append(values[i].substring(0, 1).toUpperCase());
+      result.append(values[i].substring(1).toLowerCase());
+      result.append(SPACE);
     }
-    return strBuilder.toString();
+    return result.toString();
   }
 
   public static String AllUpperCase(String value) {
     String[] values = value.split(" ");
-    StringBuilder strBuilder = new StringBuilder();
+    StringBuilder result = new StringBuilder();
     for (int i = 0; i < values.length; i++) {
-      strBuilder.append(values[i].substring(0, 1).toUpperCase());
-      strBuilder.append(values[i].substring(1).toLowerCase());
-      strBuilder.append(values[i].substring(1).toLowerCase());
-      strBuilder.append(SPACE);
+      result.append(values[i].substring(0, 1).toUpperCase());
+      result.append(values[i].substring(1).toLowerCase());
+      result.append(SPACE);
     }
-    return strBuilder.toString();
+    return result.toString();
   }
 }
