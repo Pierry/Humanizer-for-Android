@@ -24,5 +24,5 @@ Into your build.gradle:
     }
 
     dependencies {
-      compile 'com.github.Pierry:SimpleToast:v1.7'
+      compile 'com.github.Pierry:Humanizer-for-Android:v1.0'
     }
