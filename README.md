@@ -1,10 +1,8 @@
 Humanizer-for-Android
 =====
 
-    ThisIsAnExample => This is an example
-    THIS IS AN EXAMPLE => This is an example
-    
-    
+v1.0
+
 Usage
 =====
 
@@ -20,6 +18,15 @@ After  => This is an example
 ### Names:
 
 Before => this is an example
+
+After  => This Is An Example
+  
+    String result = Humanizer.Name(stringValue);
+  
+  
+### AllUpperCase:
+
+Before => THIS IS AN EXAMPLE
 
 After  => This Is An Example
   
